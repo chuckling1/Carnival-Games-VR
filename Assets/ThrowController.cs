@@ -10,7 +10,7 @@ public class ThrowController : MonoBehaviour {
 	public Transform parentBone;
 	private GameObject ball;
 	public int numBalls;
-	private Animator animator;
+	//public Animator animator;
 	public Text ballsRemaining;
 
 
@@ -18,22 +18,20 @@ public class ThrowController : MonoBehaviour {
 	void Start () {
 
 		numBalls = 3;
-		animator = GameObject.Find ("Arms05").GetComponent<Animator> ();
-		parentBone = GameObject.Find ("Palm_R").transform;
+		//animator = GetComponent<Animator> ();
+		parentBone = GameObject.Find ("parentBone").transform;
 		ball = Instantiate (prefab, parentBone.position, parentBone.rotation) as GameObject;
-		ballsRemaining = GameObject.Find ("Balls Remaining").GetComponent<Text> ();
+		ballsRemaining = GameObject.Find("Balls Remaining").GetComponent<Text> ();
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		ballsRemaining.text = "Balls Remaining: " + numBalls.ToString();
+		//ballsRemaining.text = "Balls Remaining: " + numBalls.ToString();
 
-		if (Input.GetButtonDown ("Jump")) {
-			if (numBalls > 0) {
-				animator.Play ("Throwing", -1, 0f);
-			}
+		if (Input.GetMouseButtonDown (0)) {
+			ThrowBall ();
 		}
 
 	}

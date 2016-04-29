@@ -24,8 +24,8 @@ public class BallController : MonoBehaviour {
 		Random.seed = 42;
 		rb = GetComponent<Rigidbody> ();
 
-		parentBone = GameObject.Find ("Palm_R");
-		mainCamera = GameObject.Find ("Main Camera");
+		parentBone = GameObject.Find ("parentBone");
+		mainCamera = GameObject.Find ("MainCamera");
 		transform.parent = parentBone.transform;
 		rb.useGravity = false;
 
