@@ -17,11 +17,11 @@ public class ThrowController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		numBalls = 3;
+		numBalls = 2;
 		//animator = GetComponent<Animator> ();
 		parentBone = GameObject.Find ("parentBone").transform;
-		ball = Instantiate (prefab, parentBone.position, parentBone.rotation) as GameObject;
 		ballsRemaining = GameObject.Find("Balls Remaining").GetComponent<Text> ();
+		ball = Instantiate (prefab, parentBone.position, parentBone.rotation) as GameObject;
 
 	}
 	
@@ -37,7 +37,7 @@ public class ThrowController : MonoBehaviour {
 	}
 
 	void ThrowBall(){
-	
+
 		ballScript = ball.GetComponent<BallController> ();
 		ballScript.Release ();
 
@@ -58,6 +58,7 @@ public class ThrowController : MonoBehaviour {
 
 	public void makeNewBall(){
 		ball = Instantiate (prefab, parentBone.position, parentBone.rotation) as GameObject;
+
 	}
 		
 

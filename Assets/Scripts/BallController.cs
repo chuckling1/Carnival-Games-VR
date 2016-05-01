@@ -21,7 +21,14 @@ public class BallController : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		Random.seed = 42;
+		
+
+
+	}
+
+
+	public void Release()
+	{
 		rb = GetComponent<Rigidbody> ();
 
 		parentBone = GameObject.Find ("parentBone");
@@ -29,17 +36,12 @@ public class BallController : MonoBehaviour {
 		transform.parent = parentBone.transform;
 		rb.useGravity = false;
 
-	}
-
-
-	public void Release()
-	{
 		transform.parent = null;
 		rb.useGravity = true;
 
 		transform.rotation = mainCamera.transform.rotation;
-		rb.AddForce(transform.forward * 46000);
-		rb.AddForce (new Vector3 (-1.2f, 0.3f, 0.0f) * 1000);
+		rb.AddForce(transform.forward * 16000);
+		rb.AddForce (new Vector3 (-1.0f, 1.0f, 0.0f) * 1000);
 
 
 	}

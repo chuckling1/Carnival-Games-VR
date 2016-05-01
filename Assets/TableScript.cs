@@ -13,9 +13,7 @@ public class TableScript : MonoBehaviour {
 	void Start () {
 		index = 0;
 		rigidBody = GetComponent<Rigidbody> ();
-
-		arms = GameObject.Find("Arms05");
-		ThrowController throwController = arms.GetComponent<ThrowController> ();
+		ThrowController throwController = GameObject.Find("MainCamera").GetComponent<ThrowController> () ;
 
 
 		numBalls = throwController.getNumBalls ();
