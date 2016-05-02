@@ -72,7 +72,11 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 154824}
   serializedVersion: 2
+<<<<<<< HEAD
   m_Mass: 6
+=======
+  m_Mass: 5
+>>>>>>> d1c4cf2d159ee7abe467698edcf1c75c9880069a
   m_Drag: 1
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -91,6 +95,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d77b5a65a206f4c7f90fe506372ec967, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+=======
+  reticle: {fileID: 0}
+>>>>>>> d1c4cf2d159ee7abe467698edcf1c75c9880069a
 --- !u!135 &13554270
 SphereCollider:
   m_ObjectHideFlags: 1

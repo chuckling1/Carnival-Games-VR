@@ -24,7 +24,11 @@ PlayerSettings:
   m_ActiveColorSpace: 0
   m_MTRendering: 1
   m_MobileMTRendering: 0
+<<<<<<< HEAD
   m_Stereoscopic3D: 0
+=======
+  m_Stereoscopic3D: 1
+>>>>>>> d1c4cf2d159ee7abe467698edcf1c75c9880069a
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
   iosAppInBackgroundBehavior: 0
@@ -49,7 +53,11 @@ PlayerSettings:
   forceSingleInstance: 0
   resizableWindow: 0
   useMacAppStoreValidation: 0
+<<<<<<< HEAD
   gpuSkinning: 0
+=======
+  gpuSkinning: 1
+>>>>>>> d1c4cf2d159ee7abe467698edcf1c75c9880069a
   xboxPIXTextureCapture: 0
   xboxEnableAvatar: 0
   xboxEnableKinect: 0
@@ -95,7 +103,11 @@ PlayerSettings:
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
+<<<<<<< HEAD
   virtualRealitySupported: 0
+=======
+  virtualRealitySupported: 1
+>>>>>>> d1c4cf2d159ee7abe467698edcf1c75c9880069a
   productGUID: 0086036c33305704294abb2f69fd081d
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
